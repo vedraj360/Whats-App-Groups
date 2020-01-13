@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_grp"
+        android:icon="@drawable/wd"
+        android:checkable="true"
+        android:title="@string/whatsgroups"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/navigation_add"
+        android:checkable="false"
+        android:icon="@drawable/ad"
+        android:title="@string/addgroups" />
+    <item
+        android:id="@+id/navigation_mor"
+        android:icon="@drawable/more"
+        android:checkable="false"
+        android:title="@string/MoreApps"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/navigation_abt"
+        android:icon="@drawable/info"
+        android:checkable="false"
+        android:title="@string/About_Us"
+        app:showAsAction="ifRoom"/>
+
+</menu>

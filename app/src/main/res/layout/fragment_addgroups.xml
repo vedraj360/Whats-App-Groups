@@ -1,0 +1,93 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:id="@+id/coordinator"
+    tools:context="infinitives.whatsappgroups.addgroups">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:text="Choose Your Category:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.rey.material.widget.Spinner
+            android:id="@+id/spinner"
+            style="@style/Material.Widget.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            app:rd_delayClick="none"
+            app:rd_enable="true"
+            app:rd_style="@style/Material.Drawable.Ripple.Wave"
+            app:spn_arrowAnimDuration="@android:integer/config_shortAnimTime"
+            app:spn_arrowInterpolator="@android:anim/decelerate_interpolator"
+            app:spn_arrowSwitchMode="true"
+            app:spn_dividerAnimDuration="@android:integer/config_mediumAnimTime"
+            app:spn_dividerColor="#69d262"
+            app:spn_dividerHeight="2dp"
+            app:spn_labelEnable="true"
+            app:spn_labelTextAppearance="@style/Material"
+            app:spn_labelTextColor="@color/black"
+            app:spn_labelTextSize="15dp"
+            app:spn_popupItemAnimOffset="@android:integer/config_shortAnimTime" />
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/gname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner"
+            android:layout_marginRight="15dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:hint="Group Name"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelTextSize="15dp" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/linkn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gname"
+            android:layout_marginRight="15dp"
+            android:layout_marginStart="8dp"
+            android:hint="Link"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelTextSize="15dp"
+            app:met_singleLineEllipsis="true" />
+
+
+        <com.rey.material.widget.Button
+            android:id="@+id/send"
+            android:layout_width="250dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linkn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:text="Add Group"
+            app:rd_enable="true"
+            app:rd_delayClick="untilRelease"
+            app:rd_inInterpolator="@android:anim/fade_in"
+            app:rd_cornerRadius="5dp"
+            app:rd_rippleAnimDuration="2"
+            app:rd_style="@style/Material.Drawable.Ripple.Touch" />
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

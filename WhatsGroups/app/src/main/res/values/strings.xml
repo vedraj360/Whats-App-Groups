@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WhatsGroups</string>
+    <string name="whatsgroups">Whats App Groups</string>
+    <string name="addgroups">Add Groups</string>
+    <string name="MoreApps">More Apps</string>
+    <string name="About_Us">About Us</string>
+    <string name="privacypolicy" translatable="false" >Privacy Policy %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
